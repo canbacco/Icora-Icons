@@ -1,21 +1,20 @@
-# Icora CSS Icon Library
+# Icora Icons
 
-Pure CSS icon library that paints SVG paths via CSS masks. No runtime JavaScript required. Icons inherit color from text using `currentColor`, scale with `font-size`, and align neatly with text baselines.
+Icora Icons is a lightweight icon set powered by pure CSS and SVG masks. It requires no JavaScript and can be easily added to any project.
 
 ## Features
-- Zero JS at runtime – just include one CSS file
-- Color via `currentColor` (change icon color with regular CSS)
-- Crisp sizing with `font-size` or utility classes (`.icora-xs/sm/md/lg`, `.icora-1x…5x`)
-- Baseline alignment for inline text; fixed-width option for list layouts
-- Works with inline Data URIs
-- Ships both `-webkit-mask-image` and `mask-image` for broad browser support
+
+- Pure CSS implementation  
+- No runtime JavaScript required  
+- Scalable and lightweight  
+- Easy to integrate into any web project
 
 ## Getting Started
 1. Include the stylesheet:
 ```html
-<link rel="stylesheet" href="css/icora.css" />
+<link rel="stylesheet" href="icora.css" />
 ```
-2. Use an icon class:
+2. Add the desired icon class:
 ```html
 <i class="icora icora-filter-o"></i>
 ```
@@ -43,24 +42,11 @@ Example:
 </ul>
 ```
 
-## Available Icons (in this repo)
-- `icora-filter-o`
-- `icora-filter-f`
-- `icora-person-add-o`
-- `icora-login-o`
-
-Use them like:
-```html
-<i class="icora icora-login-o"></i>
-```
-
 ## Add Your Own Icons
-Convert your SVGs to Data URIs and create classes under the “Icons” section in `css/icora.css`:
+Convert your SVGs to Data URIs and create classes under the “Icons” section in `icora.css`:
 ```css
 .icora-your-icon { -webkit-mask-image: url("data:image/svg+xml;charset=utf-8,..."); mask-image: url("data:image/svg+xml;charset=utf-8,..."); }
 ```
-
- 
 
 ## Accessibility
 - Decorative icons: add `aria-hidden="true"` or mark the container as presentational.
@@ -81,6 +67,12 @@ Use the provided pair of properties for best coverage:
 - `-webkit-mask-image` (WebKit/Blink)
 - `mask-image` (standard)
 
+## Available Icons (in this repo)
+- `icora-filter-o`
+- `icora-filter-f`
+- `icora-person-add-o`
+- `icora-login-o`
+
 ## Tips & Troubleshooting
 - If an icon doesn’t show, ensure the element has color (icons use `background-color: currentColor`).
 - Ensure your SVG has a `viewBox` (add one if missing).
@@ -89,8 +81,7 @@ Use the provided pair of properties for best coverage:
 
 ## Contributing
 PRs welcome. If you add icons, include:
-- The CSS block in `css/icora.css`
-- Optional source SVGs in `svgs/`
-
+- The CSS block in `icora.css`
 ## License
 MIT
+
