@@ -68,6 +68,10 @@ Use the provided pair of properties for best coverage:
 - `mask-image` (standard)
 
 ## Available Icons (in this repo)
+- `icora-chevron-left`
+- `icora-chevron-up`
+- `icora-chevron-right`
+- `icora-chevron-down`
 - `icora-filter-o`
 - `icora-filter-f`
 - `icora-person-add-o`
@@ -84,4 +88,5 @@ PRs welcome. If you add icons, include:
 - The CSS block in `icora.css`
 ## License
 MIT
+
 
